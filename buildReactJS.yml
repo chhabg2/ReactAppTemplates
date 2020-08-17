@@ -3,6 +3,8 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
+      git clone https://github.com/opstree/OT-Microservices.git
+      cd ~/OT-Microservices/frontend
       npm install
       npm run build
       ls
