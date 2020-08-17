@@ -3,11 +3,11 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      wget -O package.json https://raw.githubusercontent.com/aftab70/ReactJS/master/package.json
+      wget -O package.json https://raw.githubusercontent.com/chhabg2/ReactAppTemplates/master/package.json
       npm install --save-dev jest
       touch src/hello.js && touch src/hello.test.js
-      wget -O src/hello.js https://raw.githubusercontent.com/aftab70/ReactJS/master/hello.js
-      wget -O src/hello.test.js https://raw.githubusercontent.com/aftab70/ReactJS/master/App.test.js
+      wget -O src/hello.js https://raw.githubusercontent.com/chhabg2/ReactAppTemplates/master/hello.js
+      wget -O src/hello.test.js https://raw.githubusercontent.com/chhabg2/ReactAppTemplates/master/App.test.js
       npm run test
     workingDirectory: 'frontend'
   displayName: 'UnitTesting'
