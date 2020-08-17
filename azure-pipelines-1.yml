@@ -1,0 +1,21 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+resources:
+  repositories:
+    -  repository: self
+    -  repository: ReactAppTemplates
+       type: github
+       endpoint: GitHub-AzureDevOps
+       name: chhabg2/ReactAppTemplates
+trigger:
+- master
+steps:
+- template: installNodeJS.yml@ReactAppTemplates
+- template: buildReactJS.yml@ReactAppTemplates
+- template: unittesting.yml@ReactAppTemplates
+- template: codecoverageReactJS.yml@ReactAppTemplates
+- template: codequalityReactJS.yml@ReactAppTemplates
+- template: archiveReactJS.yml@ReactAppTemplates
+- template: publishartifactReactJS.yml@ReactAppTemplates
