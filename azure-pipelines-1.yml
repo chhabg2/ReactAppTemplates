@@ -12,10 +12,10 @@ resources:
 #trigger:
 #- master
 steps:
-- template: installNodeJS.yml@chhabg2/ReactAppTemplates
-- template: buildReactJS.yml@chhabg2/ReactAppTemplates
-- template: unittesting.yml@chhabg2/ReactAppTemplates
-- template: codecoverageReactJS.yml@chhabg2/ReactAppTemplates
-- template: codequalityReactJS.yml@chhabg2/ReactAppTemplates
-- template: archiveReactJS.yml@chhabg2/ReactAppTemplates
-- template: publishartifactReactJS.yml@chhabg2/ReactAppTemplates
+- template: installNodeJS.yml@ReactAppTemplates
+- template: buildReactJS.yml@ReactAppTemplates
+- template: unittesting.yml@ReactAppTemplates
+- template: codecoverageReactJS.yml@ReactAppTemplates
+- template: codequalityReactJS.yml@ReactAppTemplates
+- template: archiveReactJS.yml@ReactAppTemplates
+- template: publishartifactReactJS.yml@ReactAppTemplates
