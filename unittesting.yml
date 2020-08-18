@@ -9,5 +9,5 @@ steps:
       wget -O src/hello.js https://raw.githubusercontent.com/chhabg2/ReactAppTemplates/master/hello.js
       wget -O src/hello.test.js https://raw.githubusercontent.com/chhabg2/ReactAppTemplates/master/App.test.js
       npm run test
-    workingDirectory: 'frontend'
+ #   workingDirectory: 'frontend'
   displayName: 'UnitTesting'

@@ -4,6 +4,6 @@ steps:
     targetType: 'inline'
     script: |
       ls
-    workingDirectory: 'frontend'
+  #  workingDirectory: 'frontend'
   displayName: 'codequalityReactJS'
 

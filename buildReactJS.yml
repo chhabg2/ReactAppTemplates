@@ -3,11 +3,11 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      git init
-      git clone https://github.com/opstree/OT-Microservices.git
-      cd ~/OT-Microservices/frontend
+     # git init
+     # git clone https://github.com/opstree/OT-Microservices.git
+     # cd ~/OT-Microservices/frontend
       npm install
       npm run build
       ls
-    workingDirectory: 'frontend'
+   #  workingDirectory: 'frontend'
   displayName: 'BuildReactJS'
