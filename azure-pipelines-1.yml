@@ -9,8 +9,8 @@ resources:
        type: github
        endpoint: GitHub-AzureDevOps
        name: chhabg2/ReactAppTemplates
-trigger:
-- master
+#trigger:
+#- master
 steps:
 - template: installNodeJS.yml@ReactAppTemplates
 - template: buildReactJS.yml@ReactAppTemplates
